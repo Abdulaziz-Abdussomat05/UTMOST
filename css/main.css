@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+header .menu {
+  display: none;
 }
 
 .container{
@@ -450,14 +455,16 @@ button{
   .header-wrap ul {
     display: none;
   }
-  header i  {
+  header .menu   {
     display: block;
     font-size: 24px;
-    color: blue;
+    color: black;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 900px) {
+
   .hero-wrap {
     position: absolute;
     top: 17%;
